@@ -1,0 +1,11 @@
+{
+    "extends": "../node_modules/eslint-plugin-skeleton/config/mixins/test",
+    "globals": {
+      "chai": true,
+      "inject": true,
+      "sinon": true
+    },
+    "rules": {
+      "padded-blocks": 0
+    }
+}

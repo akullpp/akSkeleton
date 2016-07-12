@@ -1,0 +1,57 @@
+<div class="col-xs-12">
+  <form name="profileForm" class="form-horizontal" novalidate>
+    <div class="form-group">
+      <label for="firstname" class="col-xs-2 control-label">Firstname</label>
+      <div class="col-xs-2">
+        <input name="firstname"
+               type="text"
+               class="form-control"
+               placeholder="Firstname"
+               data-ng-model="vm.user.first_name"
+               data-my-text>
+      </div>
+      <ng-messages data-for="profileForm.firstname.$error">
+          <ng-messages-include data-src="app/datatypes/messages.html"></ng-messages-include>
+      </ng-messages>
+    </div>
+
+    <div class="form-group">
+      <label for="lastname" class="col-xs-2 control-label">Lastname</label>
+      <div class="col-xs-2">
+        <input name="lastname"
+               type="text"
+               class="form-control"
+               placeholder="Firstname"
+               data-ng-model="vm.user.last_name">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="email" class="col-xs-2 control-label">E-Mail</label>
+      <div class="col-xs-2">
+        <input name="email"
+               type="text"
+               class="form-control"
+               placeholder="E-Mail"
+               data-ng-model="vm.user.email">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="country" class="col-xs-2 control-label">Country</label>
+      <div class="col-xs-2">
+        <input name="country"
+               type="text"
+               class="form-control"
+               placeholder="Country"
+               data-ng-model="vm.user.country">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <div class="col-xs-offset-2 col-xs-2">
+        <button type="submit" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>

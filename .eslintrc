@@ -1,0 +1,6 @@
+{
+    "extends": "./node_modules/eslint-plugin-skeleton/config/eslintrc.base",
+    "globals": {
+      "_": true
+    }
+}

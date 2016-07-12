@@ -1,0 +1,10 @@
+<table data-ng-table="vm.tableParams" class="table table-condensed table-bordered table-striped" data-show-filter="true">
+    <tr data-ng-repeat="customer in $data">
+        <td data-title="'Id'" data-filter="{id: 'number'}" data-sortable="'id'" data-ng-bind="customer.id"></td>
+        <td data-title="'Firstname'" data-filter="{first_name: 'text'}" data-sortable="'first_name'" data-ng-bind="customer.first_name"></td>
+        <td data-title="'Lastname'" data-filter="{last_name: 'text'}" data-sortable="'last_name'" data-ng-bind="customer.last_name"></td>
+        <td data-title="'E-mail'" data-filter="{email: 'text'}" data-sortable="'email'" data-ng-bind="customer.email"></td>
+        <td data-title="'Country'" data-filter="{country: 'text'}" data-sortable="'country'" data-ng-bind="customer.country"></td>
+        <td data-title="'IP Address'" data-filter="{ip_address: 'text'}" data-sortable="'ip_address'" data-ng-bind="customer.ip_address"></td>
+    </tr>
+</table>
