@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-csp ng-jq ng-app="my">
+<html lang="en" ng-csp ng-jq ng-app="ak">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,32 +9,35 @@
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.css">
   <link rel="stylesheet" href="angular/angular-csp.css">
-  <link rel="stylesheet" href="ng-table/dist/ng-table.css">
 	<!-- endbuild -->
-	<!-- build:css(build/.tmp) styles/main.css -->
+	<!-- build:css styles/main.css -->
 	<!-- inject:css -->
 	<!-- endinject -->
 	<!-- endbuild -->
 </head>
 <body>
-<!--[if lt IE 9]>
-Requires at least IE9 to view.
-<![endif]-->
-<my-navigation></my-navigation>
-<ui-view>Site is loading...</ui-view>
-<!-- build:js scripts/vendor.js -->
-<script src="angular/angular.js"></script>
-<script src="angular-messages/angular-messages.js"></script>
-<script src="angular-ui-router/release/angular-ui-router.js"></script>
-<script src="lodash/lodash.js"></script>
-<script src="ng-table/dist/ng-table.js"></script>
-<!-- endbuild -->
-<!-- build:js scripts/main.js -->
-<!-- inject:js -->
-<!-- endinject -->
-<!-- inject:partials -->
-<!-- endinject -->
-<!-- endbuild -->
-<!-- VERSION -->
+  <!--[if lt IE 9]>
+  Requires at least IE9 to view.
+  <![endif]-->
+  <div ui-view="header"></div>
+
+  <div class="content" ui-view="content"></div>
+
+  <div ui-view="footer"></div>
+  <!-- build:js scripts/vendor.js -->
+  <script src="angular/angular.js"></script>
+  <script src="angular-messages/angular-messages.js"></script>
+  <script src="angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+  <script src="angular-smart-table/dist/smart-table.js"></script>
+  <script src="lodash/lodash.js"></script>
+  <!-- endbuild -->
+  <!-- build:js scripts/main.js -->
+  <!-- inject:js -->
+  <!-- endinject -->
+  <!-- inject:partials -->
+  <!-- endinject -->
+  <!-- endbuild -->
+  <!-- VERSION -->
 </body>
 </html>

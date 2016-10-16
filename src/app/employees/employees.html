@@ -1,0 +1,26 @@
+<div class="container-fluid">
+  <table st-table="vm.employees" class="table table-striped">
+    <thead>
+      <tr>
+        <th st-sort="firstName">first name</th>
+        <th st-sort="lastName">last name</th>
+        <th st-sort="birthDate">birth date</th>
+        <th st-sort="balance">balance</th>
+      </tr>
+
+      <tr>
+        <th colspan="5">
+          <input st-search="" class="form-control" placeholder="Search employee..." type="text"/>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="employee in vm.employees">
+          <td>{{employee.firstName}}</td>
+          <td>{{employee.lastName}}</td>
+          <td>{{employee.birthDate | date}}</td>
+          <td>{{employee.balance}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -2,35 +2,35 @@
     'use strict';
 
     angular
-        .module('my.profile.ui', [
-            'my.datatypes',
-            'my.user',
+        .module('ak.profile.ui', [
+            'ak.datatypes',
             'ngMessages',
             'ui.router'
         ])
-        .config(routes)
+        .config(route)
         .controller('ProfileController', ProfileController);
 
-    function routes($stateProvider) {
+    function route($stateProvider) {
         $stateProvider
-            .state('my.profile', {
+            .state('ak.profile', {
                 url: '/profile',
-                templateUrl: 'app/profile/profile.html',
-                resolve: {
-                    user: function ($http, User) {
-                        return User.get();
+                views: {
+                    'content@': {
+                        templateUrl: 'app/profile/profile.html',
+                        controller: 'ProfileController',
+                        controllerAs: 'vm'
                     }
-                },
-                controller: 'ProfileController',
-                controllerAs: 'vm'
+                }
             });
     }
 
-    function ProfileController(user) {
+    function ProfileController() {
         var vm = this;
 
         _.extend(vm, {
-            user: user
+            change: function () {
+                console.log('User: ', vm.user);
+            }
         });
     }
 })();

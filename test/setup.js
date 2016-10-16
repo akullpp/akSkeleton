@@ -1,5 +1,5 @@
 (function () {
     'use strict';
 
-    beforeEach(module('my.templates'));
+    beforeEach(module('ak.templates'));
 })();

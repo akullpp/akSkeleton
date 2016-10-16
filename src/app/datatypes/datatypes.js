@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('my.datatypes', [
-            'my.datatypes.text.ui'
+        .module('ak.datatypes', [
+            'ak.datatypes.text.ui'
         ]);
 })();

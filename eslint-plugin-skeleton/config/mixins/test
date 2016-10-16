@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "./browser"
+  ],
+  "env": {
+    "mocha": true
+  },
+  "rules": {
+    "skeleton/leftover-only": 2
+  },
+  "globals": {
+    "module": true
+  }
+}

@@ -2,20 +2,31 @@
     'use strict';
 
     angular
-        .module('my', [
-            'my.customers.ui',
-            'my.navigation.ui',
+        .module('ak', [
+            'ak.home.ui',
+            'ak.navbar.ui',
+            'ak.footer.ui',
             'ui.router'
         ])
-        .config(routes);
+        .config(route);
 
-    function routes($urlRouterProvider, $stateProvider) {
-        $urlRouterProvider.otherwise('/dashboard/customers');
+
+    function route($urlRouterProvider, $stateProvider) {
+        $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('my', {
-                template: '<ui-view></ui-view>',
-                abstract: true
+            .state('ak', {
+                abstract: true,
+                url: '',
+                templateUrl: 'app/app.html',
+                views: {
+                    'header': {
+                        template: '<ak-navbar></ak-navbar>'
+                    },
+                    'footer': {
+                        template: '<ak-footer></ak-footer>'
+                    }
+                }
             });
     }
 })();
