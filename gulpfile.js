@@ -1,6 +1,6 @@
 'use strict';
 
-var akGulp = require('./gulp/index');
+var akGulp = require('ak-gulp');
 var gulp = require('gulp');
 
 var config = require('./config');
