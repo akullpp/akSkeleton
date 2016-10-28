@@ -16,7 +16,7 @@
   },
   "scripts": {
     "clean": "rm -rf ./node_modules/ && rm -rf ./build",
-    "test": "gulp tests",
+    "test": "gulp test",
     "preinstall": "npm prune",
     "install": "npm update"
   },
