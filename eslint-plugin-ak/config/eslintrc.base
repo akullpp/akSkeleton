@@ -5,7 +5,7 @@
     "node": true
   },
   "plugins":[
-    "skeleton"
+    "ak"
   ],
   "globals": {
     "angular": true

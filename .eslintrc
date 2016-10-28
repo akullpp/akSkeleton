@@ -1,5 +1,5 @@
 {
-  "extends": "./node_modules/eslint-plugin-skeleton/config/eslintrc.base",
+  "extends": "./node_modules/eslint-plugin-ak/config/eslintrc.base",
   "globals": {
     "_": true
   }

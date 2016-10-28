@@ -29,7 +29,7 @@
 
         _.extend(vm, {
             change: function () {
-                console.log('User: ', vm.user);
+                // Implementation
             }
         });
     }

@@ -6,7 +6,7 @@
     "mocha": true
   },
   "rules": {
-    "skeleton/leftover-only": 2
+    "ak/leftover-only": 2
   },
   "globals": {
     "module": true

@@ -1,5 +1,5 @@
 {
-    "extends": "../node_modules/eslint-plugin-skeleton/config/mixins/test",
+    "extends": "../node_modules/eslint-plugin-ak/config/mixins/test",
     "globals": {
       "chai": true,
       "inject": true,

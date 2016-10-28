@@ -1,0 +1,6 @@
+{
+  "name": "eslint-plugin-ak",
+  "description": "ESLint plugin with default rules and mixins.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/akullpp/eslint-plugin-ak"
+}

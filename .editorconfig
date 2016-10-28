@@ -9,5 +9,5 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-[{*.{html,json},.eslintrc,eslint-plugin-skeleton/config/**/*}]
+[{*.{html,json},.eslintrc,eslint-plugin-ak/config/**/*}]
 indent_size = 2

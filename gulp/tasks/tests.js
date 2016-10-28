@@ -85,7 +85,7 @@ module.exports = function(gulp, $, config, _) {
             new $.karma.Server(options, done).start();
         } else {
             // Start a new background server and wait for tests:run
-            $.karmaBackground(options);
+            background(options);
         }
     }
 
@@ -136,5 +136,15 @@ module.exports = function(gulp, $, config, _) {
             defaults.preprocessors[config.paths.app.scripts] = ['coverage'];
         }
         return defaults;
+    }
+
+    function background (options) {
+        var backgroundProcess = $.spawn('node', [
+            $.path.join(__dirname, 'util', 'karma.js'),
+            JSON.stringify(options)
+        ]);
+        process.on('exit', function () {
+            backgroundProcess.kill();
+        });
     }
 };
