@@ -1,5 +1,11 @@
 # akSkeleton
 
+## Deprecation Warning
+
+It is recommended that you use Vue, React or even Angular 2 at this point.
+
+## Description
+
 Sandbox project for Angular 1.
 
 It integrates the following modules which should be considered for further documentation:
